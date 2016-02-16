@@ -1,9 +1,15 @@
 <!-- app/home/template.hbs -->
-  
-<h1>Home</h1>
 
 <div class="page-container home-page">
-  <aside class="left">
-    {{profile-glance}}
+  <aside class="left"> 
+    {{profile-glance user=model.user}}
   </aside>
+  
+  <!-- New code -->
+<!-- app/home/template.hbs -->
+
+<main>
+  {{status-update}}
+  {{chirps-list chirps=model.chirps}} <!-- Pass it down -->
+</main>
 </div>
