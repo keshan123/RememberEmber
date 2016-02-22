@@ -9,7 +9,7 @@
 <!-- app/home/template.hbs -->
 
 <main>
-  {{status-update}}
+  {{status-update openComposeModal=(action 'openComposeModal')}}
   {{chirps-list chirps=model.chirps}} <!-- Pass it down -->
 </main>
 </div>
